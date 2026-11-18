@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>깜빡, 그 시절 — 샘플 맵</title>
+<style>
+  html,body{margin:0;height:100%;background:#000;overflow:hidden}
+  body{display:flex;align-items:center;justify-content:center}
+  canvas{display:block;image-rendering:pixelated;image-rendering:crisp-edges}
+  /* 웹캠 영상은 화면에 띄우지 않음 (인식용으로만 사용) */
+  #webcam-preview{position:fixed;left:0;top:0;width:1px;height:1px;opacity:0;pointer-events:none}
+</style>
+</head>
+<body>
+<canvas id="screen"></canvas>
+<script src="game.js"></script>
+<script src="webcam-blink.js"></script>
+</body>
+</html>
